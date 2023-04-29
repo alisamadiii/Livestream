@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  @apply text-lg py-[.4rem] m-[2px] shadow-lg border border-gray-400 rounded px-[.8rem] bg-gray-300 text-gray-800 hover:bg-gray-800 hover:text-gray-300 duration-200;
+}
