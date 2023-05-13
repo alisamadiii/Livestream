@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to make a simple dropdown menu with tailwindCSS</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body
+    class="h-screen w-full bg-header bg-center bg-cover flex justify-center items-center"
+  >
+    <div class="group" tabindex="-1">
+      <button
+        class="bg-white px-4 py-2 shadow-lg border rounded-md group-focus-within:border-blue-500"
+      >
+        Options
+      </button>
+      <ul
+        class="invisible w-52 border bg-white mt-4 p-4 rounded-md shadow-xl -translate-y-2 scale-90 opacity-0 duration-200 group-focus-within:opacity-100 group-focus-within:translate-y-0 group-focus-within:visible group-focus-within:scale-100"
+      >
+        <li class="rounded-md p-2 hover:bg-slate-100">Home</li>
+        <li class="rounded-md p-2 hover:bg-slate-100">View</li>
+        <li class="rounded-md p-2 hover:bg-slate-100">Share</li>
+        <li class="rounded-md p-2 hover:bg-slate-100">Contact</li>
+        <li class="rounded-md p-2 hover:bg-slate-100">Sign Up</li>
+      </ul>
+    </div>
+  </body>
+</html>
