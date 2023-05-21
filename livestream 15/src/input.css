@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-pattern w-full max-w-[800px] mx-auto py-12;
+}
+
+/* @layer components {
+  .button {
+    @apply ;
+  }
+} */
