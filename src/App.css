@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  background: url("./assets/Gradient.png") center/cover;
+  isolation: isolate;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  height: 250px;
+  background: radial-gradient(
+    92.7% 459.73% at 4.91% 9.52%,
+    rgba(255, 255, 255, 0.53) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  border: 2px solid white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.129);
+  border-radius: 1em;
+  overflow: hidden;
+  padding: 1em;
+  backdrop-filter: blur(7px);
+
+  display: flex;
+  gap: 1em;
+}
+
+.container > div {
+  width: 50px;
+  height: 50px;
+  background-color: #087eaf;
+  border-radius: 0.5em;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.buttons button {
+  font-size: 1em;
+  background-color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.129);
+  transition: 200ms ease;
+}
+
+.buttons button:focus {
+  background-color: #087eaf;
+  color: white;
+}
+
+/* Circle */
+.circle {
+  background: linear-gradient(180deg, #ffffff 0%, #86c1db 100%);
+  border-radius: 9999px;
+  position: absolute;
+}
+
+.circle-1 {
+  width: 200px;
+  height: 200px;
+  top: 100px;
+  right: 330px;
+  z-index: -1;
+}
+
+.circle-2 {
+  width: 120px;
+  height: 120px;
+  top: 340px;
+  left: 300px;
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.129);
+}
