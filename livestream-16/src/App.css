@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 700px;
+  height: 300px;
+  background-color: #c7c7c7;
+  display: flex;
+  gap: 0.5em;
+  padding: 1em;
+}
+
+.container div {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+}
+
+.buttons {
+  margin-top: 1em;
+}
+
+.buttons button {
+  padding: 0.6em 1em;
+}
