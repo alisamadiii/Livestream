@@ -8,4 +8,4 @@
 // Using the <> notation
 
 const age: number = 24;
-const stringAge: string = <string>(<unknown>age);
+const stringAge: string = <string> <any> age;

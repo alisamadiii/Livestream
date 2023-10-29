@@ -47,14 +47,12 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [count, setCount] = useState(0);
-  const [opacity, setOpacity] = useState(0);
-
-  useEffect(() => {
-    setOpacity(count / 100);
-  }, [count]);
 
   return (
-    <div className="App" style={{ background: `rgba(255, 0, 0, ${opacity})` }}>
+    <div
+      className="App"
+      style={{ background: `rgba(255, 0, 0, ${count / 100})` }}
+    >
       <h1>useReducer() & useEffect()</h1>
       <h2>{count}</h2>
       <button onClick={() => setCount(count - 1)}>Decrement</button>
